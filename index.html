@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Water & Sewer Reinstatement Verification | BVi</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f3f5f2;
+      color: #26351c;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+      overflow: hidden;
+    }
+
+    .header {
+      padding: 25px 25px 18px;
+      text-align: center;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .logo {
+      max-width: 300px;
+      width: 80%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .header h1 {
+      margin: 5px 0;
+      font-size: 25px;
+      line-height: 1.2;
+      color: #304a20;
+    }
+
+    .header .area {
+      margin-top: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .content {
+      padding: 25px;
+    }
+
+    .status {
+      text-align: center;
+      padding: 12px;
+      border-radius: 8px;
+      background: #e9f4e3;
+      color: #315d20;
+      font-weight: bold;
+      margin-bottom: 22px;
+    }
+
+    .status.expired {
+      background: #f7e4e4;
+      color: #9b2525;
+    }
+
+    .section {
+      margin-bottom: 22px;
+    }
+
+    .section-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #777;
+      margin-bottom: 6px;
+    }
+
+    .verifier-name {
+      font-size: 25px;
+      font-weight: bold;
+      color: #26351c;
+    }
+
+    .verifier-id {
+      display: inline-block;
+      margin-top: 7px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background: #304a20;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .detail {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .important {
+      background: #fff8e5;
+      border-left: 4px solid #d7a600;
+      padding: 15px;
+      border-radius: 5px;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .contact {
+      background: #f1f4ef;
+      padding: 16px;
+      border-radius: 8px;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 18px 25px;
+      border-top: 1px solid #e5e5e5;
+      font-size: 13px;
+      color: #666;
+    }
+
+    .not-found {
+      text-align: center;
+      padding: 50px 25px;
+    }
+
+    .not-found h2 {
+      color: #9b2525;
+    }
+
+    @media (max-width: 500px) {
+      .page {
+        padding: 10px;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .header {
+        padding: 20px 15px;
+      }
+
+      .header h1 {
+        font-size: 21px;
+      }
+
+      .verifier-name {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="page">
+  <div class="card" id="verificationCard">
+
+    <div class="header">
+      <img src="BVi logo.png"
+           alt="BVi Consulting Engineers"
+           class="logo">
+
+      <h1>
+        SEWER &amp; WATER<br>
+        REINSTATEMENT VERIFICATION
+      </h1>
+
+      <div class="area">
+        City of Cape Town
+      </div>
+    </div>
+
+    <div class="content">
+
+      <div class="status" id="status">
+        ✓ VERIFICATION RECORD
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          Verifier
+        </div>
+
+        <div class="verifier-name" id="verifierName"></div>
+
+        <div class="verifier-id" id="verifierId"></div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          Role
+        </div>
+
+        <div class="detail" id="verifierRole"></div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          Project
+        </div>
+
+        <div class="detail">
+          Water and Sewer Reinstatement Programme
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          Area
+        </div>
+
+        <div class="detail">
+          City of Cape Town
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          Authorisation Validity
+        </div>
+
+        <div class="detail">
+          28 July 2026 – 30 July 2028
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          Purpose
+        </div>
+
+        <div class="detail">
+          Field verification associated with the
+          Water and Sewer Reinstatement Programme.
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="important">
+
+          <strong>Private Property:</strong><br>
+
+          This verification assignment does not give
+          permission to enter private property. Access
+          to private property remains subject to the
+          permission of the property owner or lawful
+          occupant.
+
+        </div>
+      </div>
+
+      <div class="contact">
+
+        <strong>BVi Consulting Engineers</strong><br>
+
+        Tel: +27 21 527 7000
+
+      </div>
+
+    </div>
+
+    <div class="footer">
+
+      This page provides verification information
+      for the identified BVi verification team member.
+
+    </div>
+
+  </div>
+</div>
+
+
+<script>
+
+  /*
+   * BVi VERIFICATION TEAM
+   */
+
+  const verifiers = {
+
+    "BVI001": {
+      name: "Chretien Le Keur",
+      role: "Verification Team Manager"
+    },
+
+    "BVI002": {
+      name: "Shadow Zulu",
+      role: "Site Verification"
+    },
+
+    "BVI003": {
+      name: "Uwakhe Mzimba",
+      role: "Site Verification"
+    },
+
+    "BVI004": {
+      name: "Yanelisa Dlakela",
+      role: "Site Verification"
+    },
+
+    "BVI005": {
+      name: "Rialivhuwa Ralubuvhi",
+      role: "Site Verification"
+    },
+
+    "BVI006": {
+      name: "Simfumene Bixa",
+      role: "Site Verification"
+    }
+
+  };
+
+
+  /*
+   * GET VERIFIER ID FROM URL
+   *
+   * Example:
+   * ?id=BVI001
+   */
+
+  const params = new URLSearchParams(window.location.search);
+
+  const verifierId = params.get("id");
+
+  const verifier = verifiers[verifierId];
+
+
+  /*
+   * DISPLAY VERIFIER INFORMATION
+   */
+
+  if (verifier) {
+
+    document.getElementById("verifierName").textContent =
+      verifier.name;
+
+    document.getElementById("verifierId").textContent =
+      verifierId;
+
+    document.getElementById("verifierRole").textContent =
+      verifier.role;
+
+
+    /*
+     * CHECK AUTHORISATION VALIDITY
+     *
+     * 28 July 2026 – 30 July 2028
+     */
+
+    const today = new Date();
+
+    const startDate =
+      new Date("2026-07-28T00:00:00");
+
+    const endDate =
+      new Date("2028-07-30T23:59:59");
+
+
+    const status =
+      document.getElementById("status");
+
+
+    if (today >= startDate && today <= endDate) {
+
+      status.textContent =
+        "✓ VERIFICATION RECORD — VALID";
+
+    } else {
+
+      status.textContent =
+        "EXPIRED / NOT CURRENTLY VALID";
+
+      status.classList.add("expired");
+
+    }
+
+  } else {
+
+    /*
+     * UNKNOWN VERIFIER
+     */
+
+    document.getElementById("verificationCard").innerHTML = `
+
+      <div class="not-found">
+
+        <h2>Verifier Not Found</h2>
+
+        <p>
+          The verifier ID provided could not be found
+          in the BVi verification records.
+        </p>
+
+        <p>
+          Please contact BVi Consulting Engineers.
+        </p>
+
+        <p>
+          <strong>
+            Tel: +27 21 527 7000
+          </strong>
+        </p>
+
+      </div>
+
+    `;
+
+  }
+
+</script>
+
+</body>
+</html>

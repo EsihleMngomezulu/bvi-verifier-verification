@@ -339,7 +339,7 @@
 
   const params = new URLSearchParams(window.location.search);
 
-  const verifierId = params.get("id");
+  const verifierId = params.get("id") || window.location.hash.replace("#", "");
 
   const verifier = verifiers[verifierId];
 

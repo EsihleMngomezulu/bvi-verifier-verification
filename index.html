@@ -37,11 +37,27 @@
       border-bottom: 1px solid #e5e5e5;
     }
 
-    .logo {
-      max-width: 300px;
-      width: 80%;
-      height: auto;
-      margin-bottom: 15px;
+  .logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  max-width: 220px;
+  width: 48%;
+  height: auto;
+}
+
+.city-logo {
+  max-width: 180px;
+  width: 38%;
+  height: auto;
+  max-height: 90px;
+  object-fit: contain;
     }
 
     .header h1 {
@@ -175,9 +191,15 @@
   <div class="card" id="verificationCard">
 
     <div class="header">
-      <img src="BVi logo.png"
-           alt="BVi Consulting Engineers"
-           class="logo">
+      <div class="logos">
+        <img src="BVi logo.png"
+             alt="BVi Consulting Engineers"
+             class="logo">
+
+        <img src="city of cape town logo.png"
+             alt="City of Cape Town"
+             class="city-logo">
+      </div>
 
       <h1>
         SEWER &amp; WATER<br>
@@ -299,7 +321,7 @@
 
     "BVI001": {
       name: "Chretien Le Keur",
-      role: "Verification Team Manager"
+      role: "Site Verification"
     },
 
     "BVI002": {
@@ -325,7 +347,31 @@
     "BVI006": {
       name: "Simfumene Bixa",
       role: "Site Verification"
-    }
+    },
+    "BVI007": {
+  name: "Lulama Vanto",
+  role: "Site Verification"
+},
+
+"BVI008": {
+  name: "Botshelo Moseki",
+  role: "Site Verification"
+},
+
+"BVI009": {
+  name: "Shamiel Rakiep",
+  role: "Site Verification"
+},
+
+"BVI010": {
+  name: "Luzuko Tukwayo",
+  role: "Site Verification"
+},
+
+"BVI011": {
+  name: "Willie Diedericks",
+  role: "Site Verification"
+}
 
   };
 
